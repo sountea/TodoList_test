@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Link for all the icon that I will use in my code-->
+    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do List</title>
+  </head>
+
+  <body>
+    <main>
+      <!--entete-->
+
+      <div class="add-task">
+        <h2><i class="fa-solid fa-clipboard-check"></i> To Do List</h2>
+        <form action="" method="post" id="todo-form">
+          <input
+            type="text"
+            name="tasks"
+            placeholder="Add a new task...."
+            id="new-task"
+            required
+          />
+
+          <button class="btn-add-task">Add task</button>
+        </form>
+      </div>
+
+      <section>
+        <div class="container">
+          <select id="sort-order">
+            <option value="asc">Tri par date (Ascendant)</option>
+            <option value="desc">Tri par date (Descendant)</option>
+          </select>
+          <ul id="tasks-list"></ul>
+        </div>
+      </section>
+    </main>
+    <div class="overlay hidden"></div>
+  </body>
+  <script src="script.js"></script>
+</html>
